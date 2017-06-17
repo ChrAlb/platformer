@@ -19,7 +19,7 @@ void State_GameOver::OnCreate(){
 
 	m_stateMgr->Remove(StateType::Game);
 }
- 
+  
 void State_GameOver::OnDestroy(){}
 
 void State_GameOver::Activate(){}
