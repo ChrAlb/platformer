@@ -7,7 +7,7 @@ Map::Map(SharedContext* l_context, BaseState* l_currentState)
 	m_currentState(l_currentState)
 {
 	m_context->m_gameMap = this;
-	LoadTiles("tiles.cfg");
+	LoadTiles("tiles.cfg.txt");
 }
 
 Map::~Map(){

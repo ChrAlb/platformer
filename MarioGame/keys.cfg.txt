@@ -8,7 +8,7 @@ Key_T 5:19
 Key_K 5:10
 Key_O 5:14
 Key_X 5:23
-Player_MoveLeft 24:0
-Player_MoveRight 24:3
+Player_MoveLeft 24:71
+Player_MoveRight 24:72
 Player_Jump 5:57
-Player_Attack 24:58
+Player_Attack 24:73
