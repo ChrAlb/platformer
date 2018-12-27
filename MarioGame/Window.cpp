@@ -1,7 +1,7 @@
 #include "Window.h"
 
 Window::Window(){ 
-	Setup("Window", sf::Vector2u(640,480));
+	Setup("Mario", sf::Vector2u(sf::VideoMode::getDesktopMode().width, sf::VideoMode::getDesktopMode().height));
 }
 
 Window::Window(const std::string& title, const sf::Vector2u& size){ 
@@ -38,7 +38,9 @@ bool Window::IsFullscreen(){ return m_isFullscreen; }
 bool Window::IsFocused(){ return m_isFocused; }
 
 sf::RenderWindow* Window::GetRenderWindow(){ return &m_window; }
+
 EventManager* Window::GetEventManager(){ return &m_eventManager; }
+
 sf::Vector2u Window::GetWindowSize(){ return m_windowSize; }
 sf::FloatRect Window::GetViewSpace(){
 	sf::Vector2f viewCenter(m_window.getView().getCenter());
