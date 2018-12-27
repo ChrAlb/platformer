@@ -30,7 +30,7 @@ public:
 		if(res){
 			++res->second;
 			return true;
-		}
+		} 
 		auto path = m_paths.find(l_id);
 		if (path == m_paths.end()){ return false; }
 		T* resource = Load(path->second);
